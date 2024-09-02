@@ -10,21 +10,20 @@ export default function Header() {
 
   return (
     <header className="bg-amber-400">
-      <div className="container mx-auto flex justify-between items-center py-4 px-4 md:px-8">
-        {/* ロゴ */}
-        <div>
+      <div className="container mx-auto flex justify-end items-center py-4 px-4 md:px-8">
+        {/* logo */}
+        <div className="flex-1">
           <a href="">
             <img src={logo} alt="My logo" className="h-12" />
           </a>
         </div>
 
-        {/* バーガーメニューアイコン */}
+        {/* icon */}
         <div className="md:hidden">
           <button
             onClick={toggleMenu}
             className="text-slate-50 focus:outline-none"
           >
-            {/* ハンバーガーアイコン */}
             <svg
               className="w-8 h-8"
               fill="none"
@@ -42,16 +41,17 @@ export default function Header() {
           </button>
         </div>
 
-        {/* ナビゲーションメニュー */}
+        {/* navigation menu */}
         <nav
-          className={`md:flex space-x-4 ${isOpen ? "block" : "hidden"} md:block`}
+          className={`flex space-x-4 justify-between ${isOpen ? "block" : "hidden"} `}
         >
-          <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 text-center">
+          <ul className=" hidden md:flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 text-center">
             <li>
               <a href="" className="text-slate-50 hover:text-slate-100">
                 Home
               </a>
             </li>
+            
             <li>
               <a href="" className="text-slate-50 hover:text-slate-100">
                 About
@@ -66,10 +66,10 @@ export default function Header() {
         </nav>
       </div>
 
-      {/* モバイルメニュー */}
+      {/* mobile menu */}
       {isOpen && (
         <nav className="md:hidden bg-amber-800">
-          <ul className="flex flex-col space-y-4 p-4">
+          <ul className="flex flex-col space-y-4 p-4 text-center">
             <li>
               <a href="" className="text-slate-50 hover:text-slate-100">
                 Home
