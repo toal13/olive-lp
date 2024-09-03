@@ -2,7 +2,7 @@ import { newArrivals } from "../data";
 
 export default function NewArrivals() {
   return (
-    <section className="py-16 bg-sky-950 text text-slate-100">
+    <section className="py-24 bg-sky-950 text text-slate-100">
       <div className="max-w-6xl mx-auto text-center mb-12">
         <h2
           className="text-3xl font-bold mb-6"
@@ -12,7 +12,7 @@ export default function NewArrivals() {
         </h2>
       </div>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-5">
         {newArrivals.map((item) => (
           <div key={item.id} className="bg-white shadow-lg overflow-hidden">
             <img
@@ -32,7 +32,7 @@ export default function NewArrivals() {
       <div className="text-center mt-12">
         <a
           href="/all-coffees"
-          className="inline-block bg-orange-400 text-white py-3 px-8 rounded-lg text-lg font-semibold hover:bg-gray-800 transition-colors"
+          className="inline-block bg-orange-400 text-white py-3 px-8 rounded-lg text-lg font-semibold hover:bg-orange-600 transition-colors"
         >
           See All Coffee
         </a>

@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section className="py-16 px-6 bg-gray-100">
+    <section className="pt-16 px-6 bg-gray-100">
       <div className="max-w-4xl mx-auto text-center">
         <h2
           className="text-3xl font-bold mb-6"
@@ -8,7 +8,7 @@ export default function About() {
         >
           About Us
         </h2>
-        <p className="text-lg text-gray-700 mb-4">
+        <p className="text-lg text-gray-700">
           At Olive, we believe that great coffee starts with exceptional beans.
           Our journey began with a passion for finding the finest coffee beans
           from around the world. We meticulously select each bean for its unique

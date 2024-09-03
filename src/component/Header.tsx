@@ -45,19 +45,19 @@ export default function Header() {
         <nav
           className={` hidden md:flex space-x-4 ${isOpen ? "block" : "hidden"} `}
         >
-          <ul className=" hidden md:flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 text-center">
+          <ul className=" hidden md:flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-7 text-center">
             <li>
-              <a href="" className="text-slate-700 hover:text-amber-500">
+              <a href="#" className="text-slate-700 hover:text-amber-500">
                 Home
               </a>
             </li>
             <li>
-              <a href="" className="text-slate-700 hover:text-amber-500">
+              <a href="#" className="text-slate-700 hover:text-amber-500">
                 About Us
               </a>
             </li>
             <li>
-              <a href="" className="text-slate-700 hover:text-amber-500">
+              <a href="#" className="text-slate-700 hover:text-amber-500">
                 New Arrivals
               </a>
             </li>
