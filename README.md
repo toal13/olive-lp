@@ -1,6 +1,6 @@
 # cafe Olive webpage　Project
 
-![Logo]　<img src="./src/assets/olive.png" alt="Logo" width="200"/>
+<img src="./src/assets/olive.png" alt="Logo" width="200"/>
 
 This project is a modern and responsive webpage created using React. It features a custom logo, a stylish menu section, and a showcase of new arrivals. The webpage is designed with mobile-first principles and includes smooth transitions and elegant designs.
 
@@ -31,16 +31,16 @@ To run this project locally, follow these steps:
    git clone https://github.com/toal13/olive-lp.git
    ```
 
-   2.Navigate to the project directory:
+2.Navigate to the project directory:
 
-2. Install dependencies:
+3. Install dependencies:
 
    ```bash
    npm install
    ```
 
-3. Run the development server:
+4. Run the development server:
 
-```bash
- npm run dev
-```
+   ```bash
+   npm run dev
+   ```
