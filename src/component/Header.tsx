@@ -9,7 +9,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-amber-400">
+    <header className=" bg-slate-200 fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto flex justify-end items-center py-4 px-4 md:px-8">
         {/* logo */}
         <div className="flex-1">
@@ -22,7 +22,7 @@ export default function Header() {
         <div className="md:hidden">
           <button
             onClick={toggleMenu}
-            className="text-slate-50 focus:outline-none"
+            className="text-slate-700 focus:outline-none"
           >
             <svg
               className="w-8 h-8"
@@ -43,23 +43,22 @@ export default function Header() {
 
         {/* navigation menu */}
         <nav
-          className={`flex space-x-4 justify-between ${isOpen ? "block" : "hidden"} `}
+          className={` hidden md:flex space-x-4 ${isOpen ? "block" : "hidden"} `}
         >
           <ul className=" hidden md:flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 text-center">
             <li>
-              <a href="" className="text-slate-50 hover:text-slate-100">
+              <a href="" className="text-slate-700 hover:text-amber-500">
                 Home
               </a>
             </li>
-            
             <li>
-              <a href="" className="text-slate-50 hover:text-slate-100">
-                About
+              <a href="" className="text-slate-700 hover:text-amber-500">
+                About Us
               </a>
             </li>
             <li>
-              <a href="" className="text-slate-50 hover:text-slate-100">
-                Product
+              <a href="" className="text-slate-700 hover:text-amber-500">
+                New Arrivals
               </a>
             </li>
           </ul>
@@ -68,21 +67,21 @@ export default function Header() {
 
       {/* mobile menu */}
       {isOpen && (
-        <nav className="md:hidden bg-amber-800">
+        <nav className="md:hidden bg-green-800">
           <ul className="flex flex-col space-y-4 p-4 text-center">
             <li>
-              <a href="" className="text-slate-50 hover:text-slate-100">
+              <a href="" className="text-slate-50 hover:text-amber-500">
                 Home
               </a>
             </li>
             <li>
-              <a href="" className="text-slate-50 hover:text-slate-100">
-                About
+              <a href="" className="text-slate-50 hover:text-amber-500">
+                About Us
               </a>
             </li>
             <li>
-              <a href="" className="text-slate-50 hover:text-slate-100">
-                Product
+              <a href="" className="text-slate-50 hover:text-amber-500">
+                New Arrivals
               </a>
             </li>
           </ul>

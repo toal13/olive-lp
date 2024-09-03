@@ -16,7 +16,7 @@ export default function Hero() {
 
         <a
           href="/shop"
-          className="bg-orange-500 text-white text-lg font-semibold py-3 px-8 rounded-lg hover:bg-orange-600 transition-colors"
+          className="bg-orange-400 text-white text-lg font-semibold py-3 px-8 rounded-lg hover:bg-orange-600 transition-colors"
         >
           Shop Now
         </a>

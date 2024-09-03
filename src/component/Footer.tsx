@@ -2,7 +2,7 @@ import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-10 px-5 md:px-8">
+    <footer className="bg-sky-950 text-white py-10 px-5 md:px-8">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Company Info */}
         <div>
@@ -38,7 +38,7 @@ export default function Footer() {
                 href="/products"
                 className="text-gray-400 hover:text-white transition-colors"
               >
-                Products
+                New Arrivals
               </a>
             </li>
             <li className="mb-2">
