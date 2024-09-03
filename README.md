@@ -1,50 +1,44 @@
-# React + TypeScript + Vite
+# cafe Olive webpage　Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Logo](./src/assets/olive.png)
 
-Currently, two official plugins are available:
+This project is a modern and responsive webpage created using React. It features a custom logo, a stylish menu section, and a showcase of new arrivals. The webpage is designed with mobile-first principles and includes smooth transitions and elegant designs.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Check out the live version of the project:
 
-## Expanding the ESLint configuration
+[View Website](https://cafeolive.netlify.app/)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+- **Custom Logo**: A unique logo designed specifically for this project.
+- **Responsive Design**: The webpage is fully responsive, adapting to different screen sizes, from mobile devices to desktops.
+- **Stylish Menu**: A visually appealing menu section showcasing items with descriptions and call-to-action buttons.
+- **New Arrivals Section**: A dedicated section for showcasing the latest products with a clean and modern layout.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Tech Stack
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **React**: The webpage is built using React.
+- **Tailwind CSS**: Tailwind CSS
+- **HTML & CSS**: Standard web technologies for structuring and styling the webpage.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Installation and Setup
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+To run this project locally, follow these steps:
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/toal13/olive-lp.git
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+
+```bash
+  npm run dev
 ```
